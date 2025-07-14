@@ -1,0 +1,106 @@
+//Atividade - Operadores (versão alternativa)
+//Cada questão é resolvida com variações nas expressões e sintaxes, sempre comentadas.
+
+//1 - Soma de 25 e 17 usando variável auxiliar.
+let n1 = 25, n2 = 17;
+const q1 = n1 + n2; // 42
+
+//2 - Subtração com resultado em nova variável.
+const q2 = 250 - 100; // 150
+
+//3 - Multiplicação com variável única.
+const q3 = 9 * 6; // 54
+
+//4 - Divisão direta.
+const q4 = 144 / 12; // 12
+
+//5 - Resto da divisão.
+const q5 = 55 % 6; // 1
+
+//6 - Incremento com operador prefixado.
+let inc = 10;
+++inc; // 11
+
+//7 - Decremento com operador prefixado.
+let dec = 5;
+--dec; // 4
+--dec; // 3
+
+//8 - Expressão com parênteses para alterar a ordem.
+const q8 = ((10 + 5) - 3) * 2; // 24
+
+//9 - Média com parseFloat para garantir precisão.
+const q9 = parseFloat((8 + 7.5 + 10) / 3); // 8.5
+
+//10 - Atribuição composta com mais operações.
+let a = 20, b = 5;
+a += b; // 25
+a = a * 2; // 50
+
+// 11. Comparação simples.
+const q11 = 10 > 7; // true
+
+// 12. Comparação com menor ou igual.
+const q12 = 5 <= 3; // false
+
+// 13. Comparações com == e ===
+const q13a = 7 == '7';  // true
+const q13b = 7 === '7'; // false
+
+// 14. Diferença entre !== e !=
+const q14a = 10 !== '10'; // true
+const q14b = 10 != '10';  // false
+
+// 15. E lógico com expressões verdadeiras.
+const q15 = (5 > 3) && (8 < 10); // true
+
+// 16. OU lógico com uma falsa e uma verdadeira.
+const q16 = (5 < 3) || (8 === 8); // true
+
+// 17. Negação de verdadeiro.
+const q17 = !(7 > 2); // false
+
+// 18. Diferença de precedência.
+const q18a = (4 + 3) * 2; // 14
+const q18b = 4 + 3 * 2;   // 10
+
+// 19. Potenciação.
+const q19 = Math.pow(2, 4); // 16
+
+// 20. Expressão com parênteses e potência.
+const q20 = Math.pow(((10 + 2) / 2), 2); // 36
+
+// 21. Verificação de igualdade entre soma e produto.
+const q21 = (4 + 4) === (2 * 4); // true
+
+// 22. Expressão com negação que retorna false.
+const q22 = (3 == 3) && !(2 == 2) && (4 == 4); // false
+
+// 23. Expressão complexa com ||
+const q23 = (3 !== '3') || (1 != 2) || (false !== 0) || true; // true
+
+// 24. Precedência: ** > * > +
+const q24 = 5 + 3 * (2 ** 2); // 17
+
+// 25. Atribuições compostas sucessivas.
+let r = 3;
+r += 8; // 11
+r = r / 2; // 5.5
+
+// 26. Concatenação de strings.
+const nome = 'João Ricardo';
+const sobrenome = 'Rocha Lopes';
+const completo = `${nome} ${sobrenome}`; // "João Ricardo Rocha Lopes"
+
+// 27. Concatenação + coerção.
+const q27 = ("5" + 5) == 55; // true
+
+// 28. Avaliação de operadores booleanos.
+const q28 = (true && false) || true; // true
+
+// 29. Expressão lógica verdadeira.
+const q29 = ((2 + 3) * 2 === 10) && (6 / 3 === 2); // true
+
+// 30. Avaliação passo a passo.
+// 5*2=10, 10+10=20, 30/2=15, 20>15=true, !false=true, true&&true=true
+let q30 = (10 + 5 * 2) > (30 / 2) && !false; // true
